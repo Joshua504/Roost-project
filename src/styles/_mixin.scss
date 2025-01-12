@@ -1,0 +1,16 @@
+@mixin mobile {
+	@media (width <= 767px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (768px < width <= 1024px) {
+		@content;
+	}
+}
+@mixin macbook {
+	@media (1025px < width <= 1440px) {
+		@content;
+	}
+}
