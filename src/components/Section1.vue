@@ -84,6 +84,7 @@ onMounted(() => {
 
 		@include mobile {
 			width: 100%;
+			text-align: center;
 		}
 		@include tablet {
 			width: 100%;

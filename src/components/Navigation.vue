@@ -16,19 +16,19 @@
 		</div>
 		<section class="nav-area" :class="{ active: isOpen }">
 			<ul>
-				<router-link class="link">
+				<router-link class="link" to="/">
 					<li @click="closeMenu">home</li>
 				</router-link>
-				<router-link class="link">
+				<router-link class="link" to="/">
 					<li @click="closeMenu">about us</li>
 				</router-link>
-				<router-link class="link">
+				<router-link class="link" to="/">
 					<li @click="closeMenu">roadmap</li>
 				</router-link>
-				<router-link class="link">
+				<router-link class="link" to="/">
 					<li @click="closeMenu">tokenomics</li>
 				</router-link>
-				<router-link class="link">
+				<router-link class="link" to="/">
 					<li @click="closeMenu">join community</li>
 				</router-link>
 			</ul>
@@ -38,8 +38,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-
+import {ref} from 'vue'
 const isOpen = ref(false);
 
 const toggleMenu = () => {
@@ -62,8 +61,7 @@ nav {
 	display: flex;
 	align-items: center;
 	padding: 28px 118px;
-	// background: #fff6b5;
-	background: greenyellow;
+	background: #fff6b5;
 	z-index: 10;
 	border-bottom: 1px solid #000000;
 
@@ -162,7 +160,7 @@ nav {
 			border-bottom-left-radius: 10px;
 
 			&.active {
-				top: 403%;
+				top: 103%;
 			}
 		}
 		@include tablet {
